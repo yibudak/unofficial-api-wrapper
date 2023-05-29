@@ -27,7 +27,7 @@ def send_reply():
     token = data["token"]
 
     if token != conf.app.token:
-        return "Invalid token", 401
+        return sonify({"status": "error"}), 400
     try:
         account.reply(text=tweet_text, tweet_id=reply_to)
         return jsonify({"status": "ok"}), 200
