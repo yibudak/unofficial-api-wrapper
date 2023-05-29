@@ -12,8 +12,9 @@ charset-normalizer==3.1.0
 click==8.1.3
 cryptography==40.0.2
 Flask==2.3.2
-flask-expects-json @ git+https://github.com/yibudak/flask-expects-json.git@f9fabeea61d6183095c973d891bb8a8f0253efd6
+git+https://github.com/yibudak/flask-expects-json.git@master#egg=flask-expects-json
 frozenlist==1.3.3
+gunicorn==20.1.0
 h11==0.14.0
 httpcore==0.17.2
 httpx==0.24.1
